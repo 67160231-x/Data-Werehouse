@@ -1,0 +1,40 @@
+2026-08-12 10:26:52,523 | INFO | ETL started
+2026-08-12 10:26:52,525 | INFO | Extracted customers: 62 rows
+2026-08-12 10:26:52,526 | INFO | Extracted orders: 183 rows
+2026-08-12 10:26:52,526 | INFO | Extracted products: 15 rows
+2026-08-12 10:26:52,528 | INFO | Extracted stores: 3 rows
+2026-08-12 10:26:52,528 | INFO | Checkpoint | customers | shape=(62, 4) | columns=['customer_id', 'name', 'province', 'email']
+2026-08-12 10:26:52,528 | INFO | Checkpoint | orders | shape=(183, 8) | columns=['order_id', 'customer_id', 'product_id', 'order_date', 'qty', 'unit_price', 'discount_pct', 'status']
+2026-08-12 10:26:52,528 | INFO | Checkpoint | products | shape=(15, 4) | columns=['product_id', 'product_name', 'category.name', 'pricing.price']
+2026-08-12 10:26:52,528 | INFO | Checkpoint | stores | shape=(3, 3) | columns=['store_id', 'store_name', 'province']
+2026-08-12 10:26:52,529 | INFO | Customers: removed 2 duplicate customer_id rows
+2026-08-12 10:26:52,534 | INFO | Orders: removed 3 duplicate order_id rows
+2026-08-12 10:26:52,557 | INFO | Orders: rejected 4 rows for invalid qty/price/discount/date
+2026-08-12 10:26:52,560 | INFO | Orders: 100 paid/completed of 176 clean orders (rest are pending/cancelled, excluded from sales)
+2026-08-12 10:26:52,560 | INFO | Orders: rejected 0 rows for unknown customer/product
+2026-08-12 10:26:52,566 | INFO | Transform complete: 100 sales rows, 7 reject rows
+2026-08-12 10:26:52,572 | INFO | Loaded 60 rows into dim_customer
+2026-08-12 10:26:52,572 | INFO | Loaded 15 rows into dim_product
+2026-08-12 10:26:52,575 | INFO | fact_sales now has 100 rows total (attempted to insert 100)
+2026-08-12 10:26:52,575 | INFO | Validation result: {'source_valid_rows': 100, 'warehouse_rows': 100, 'duplicate_order_ids': 0, 'source_total_sales': 192074.66, 'warehouse_total_sales': 192074.66, 'status': 'PASS'}
+2026-08-12 10:26:52,576 | INFO | ETL completed
+2026-08-12 10:27:01,372 | INFO | ETL started
+2026-08-12 10:27:01,373 | INFO | Extracted customers: 62 rows
+2026-08-12 10:27:01,375 | INFO | Extracted orders: 183 rows
+2026-08-12 10:27:01,375 | INFO | Extracted products: 15 rows
+2026-08-12 10:27:01,376 | INFO | Extracted stores: 3 rows
+2026-08-12 10:27:01,376 | INFO | Checkpoint | customers | shape=(62, 4) | columns=['customer_id', 'name', 'province', 'email']
+2026-08-12 10:27:01,376 | INFO | Checkpoint | orders | shape=(183, 8) | columns=['order_id', 'customer_id', 'product_id', 'order_date', 'qty', 'unit_price', 'discount_pct', 'status']
+2026-08-12 10:27:01,376 | INFO | Checkpoint | products | shape=(15, 4) | columns=['product_id', 'product_name', 'category.name', 'pricing.price']
+2026-08-12 10:27:01,377 | INFO | Checkpoint | stores | shape=(3, 3) | columns=['store_id', 'store_name', 'province']
+2026-08-12 10:27:01,378 | INFO | Customers: removed 2 duplicate customer_id rows
+2026-08-12 10:27:01,382 | INFO | Orders: removed 3 duplicate order_id rows
+2026-08-12 10:27:01,403 | INFO | Orders: rejected 4 rows for invalid qty/price/discount/date
+2026-08-12 10:27:01,406 | INFO | Orders: 100 paid/completed of 176 clean orders (rest are pending/cancelled, excluded from sales)
+2026-08-12 10:27:01,406 | INFO | Orders: rejected 0 rows for unknown customer/product
+2026-08-12 10:27:01,411 | INFO | Transform complete: 100 sales rows, 7 reject rows
+2026-08-12 10:27:01,414 | INFO | Loaded 60 rows into dim_customer
+2026-08-12 10:27:01,415 | INFO | Loaded 15 rows into dim_product
+2026-08-12 10:27:01,417 | INFO | fact_sales now has 100 rows total (attempted to insert 100)
+2026-08-12 10:27:01,417 | INFO | Validation result: {'source_valid_rows': 100, 'warehouse_rows': 100, 'duplicate_order_ids': 0, 'source_total_sales': 192074.66, 'warehouse_total_sales': 192074.66, 'status': 'PASS'}
+2026-08-12 10:27:01,418 | INFO | ETL completed

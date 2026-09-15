@@ -1,0 +1,5 @@
+province	month	revenue
+Bangkok	2026-08	310
+Bangkok	2026-09	540
+Chonburi	2026-08	180
+Chonburi	2026-09	360

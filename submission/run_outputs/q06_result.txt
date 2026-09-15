@@ -1,0 +1,3 @@
+category	region	revenue
+Drink	East	300
+Snack	East	240

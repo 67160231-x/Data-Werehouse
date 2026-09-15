@@ -1,0 +1,42 @@
+  order_id  line_no   full_date  year  ...   region quantity unit_price amount
+0    O1001        1  2026-08-08  2026  ...     East        2         50    100
+1    O1001        2  2026-08-08  2026  ...     East        1         80     80
+2    O1002        1  2026-08-09  2026  ...  Central        3         50    150
+3    O1003        1  2026-08-10  2026  ...  Central        2         80    160
+4    O1004        1  2026-09-09  2026  ...     East        4         50    200
+
+[5 rows x 13 columns]
+
+--- P1: province x month (sum) ---
+month     2026-08  2026-09  Total
+province                         
+Bangkok       310      540    850
+Chonburi      180      360    540
+Total         490      900   1390
+
+--- P2: September only, category x province (sum) ---
+province  Bangkok  Chonburi
+category                   
+Drink         300       200
+Snack         240       160
+
+P3 OK: pivot grand total (1390) == df['amount'].sum() (1390)
+
+Saved: /home/claude/week09/answers/pivot_province_month.csv
+Saved: /home/claude/week09/answers/pivot_september.csv
+
+--- Buggy version (no aggfunc, defaults to mean) ---
+month     2026-08  2026-09
+province                  
+Bangkok     155.0    270.0
+Chonburi     90.0    180.0
+Bangkok/2026-09 mean cell: 270.0
+Bangkok/2026-09 correct sum cell: 540
+
+--- Drink only: province x month (sum) ---
+month     2026-08  2026-09
+province                  
+Bangkok       150      300
+Chonburi      100      200
+Drink total revenue: 750
+Saved: /home/claude/week09/answers/pivot_drink.csv

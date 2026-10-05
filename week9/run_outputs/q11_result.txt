@@ -1,0 +1,2 @@
+fact_rows	view_rows	fact_revenue	view_revenue
+8	8	1390	1390

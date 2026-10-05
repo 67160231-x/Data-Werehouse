@@ -1,0 +1,11 @@
+Before/after check (fact_sales vs sales view):
+  fact_sales: rows=11, revenue=1900
+  sales view: rows=11, revenue=1900, orders=8
+  OK: row count and revenue match before and after JOIN.
+
+New pivot (province x month, sum):
+month     2026-08  2026-09  2026-10  Total
+province                                  
+Bangkok       310      540      200   1050
+Chonburi      180      360      310    850
+Total         490      900      510   1900

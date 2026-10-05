@@ -1,0 +1,6 @@
+Before: [('O1004', 'PAID')]
+Rows updated: 0
+After: [('O1004', 'PAID')]
+Before: [('O1004', 'PAID')]
+Rows updated: 0
+After: [('O1004', 'PAID')]

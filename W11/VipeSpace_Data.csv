@@ -1,0 +1,44 @@
+﻿dataset,label,value,unit
+monthly_scans,เม.ย.,320,scans
+monthly_orders,เม.ย.,20,orders
+b2b_partners,เม.ย.,0,partners
+monthly_revenue,เม.ย.,14240,THB
+monthly_scans,พ.ค.,610,scans
+monthly_orders,พ.ค.,48,orders
+b2b_partners,พ.ค.,1,partners
+monthly_revenue,พ.ค.,39076,THB
+monthly_scans,มิ.ย.,1150,scans
+monthly_orders,มิ.ย.,110,orders
+b2b_partners,มิ.ย.,2,partners
+monthly_revenue,มิ.ย.,88120,THB
+monthly_scans,ก.ค.,1980,scans
+monthly_orders,ก.ค.,205,orders
+b2b_partners,ก.ค.,4,partners
+monthly_revenue,ก.ค.,165560,THB
+monthly_scans,ส.ค.,3100,scans
+monthly_orders,ส.ค.,360,orders
+b2b_partners,ส.ค.,5,partners
+monthly_revenue,ส.ค.,280820,THB
+monthly_scans,ก.ย.,4600,scans
+monthly_orders,ก.ย.,520,orders
+b2b_partners,ก.ย.,7,partners
+monthly_revenue,ก.ย.,404540,THB
+funnel_sep,ผู้เข้าชมเว็บ,18000,users
+funnel_sep,เริ่มสแกนห้อง,6300,users
+funnel_sep,สแกนสำเร็จ,4600,users
+funnel_sep,ดูผลจัดวาง AI,4100,users
+funnel_sep,ใส่ตะกร้า,1480,users
+funnel_sep,สั่งซื้อ,520,users
+survey_pain,กลัวเฟอร์นิเจอร์ไม่พอดีห้อง,62,% (n=120)
+survey_pain,ภาพสินค้าไม่ตรงกับของจริง,54,% (n=120)
+survey_pain,วัดห้องเองยาก,47,% (n=120)
+survey_pain,คืนสินค้า/ขนส่งยุ่งยาก,33,% (n=120)
+segment,ซื้อคอนโด/บ้านใหม่,42,%
+segment,ผู้เช่า/ย้ายที่อยู่,28,%
+segment,ตกแต่งห้องใหม่,20,%
+segment,ดีไซเนอร์/B2B,10,%
+assumption,AOV,8900,THB
+assumption,commission,8,%
+assumption,B2B fee/month,4900,THB
+assumption,return rate before,18,%
+assumption,return rate with AR,7,%

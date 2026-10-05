@@ -1,0 +1,4 @@
+store_name	revenue
+Nimman	145280
+Pattaya	141215
+Muang Rayong	136710
